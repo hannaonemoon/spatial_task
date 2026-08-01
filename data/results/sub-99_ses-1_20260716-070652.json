@@ -1,0 +1,20 @@
+{
+  "participant": "99",
+  "session": "1",
+  "researcher": "JR",
+  "trigger_mode": "No EEG triggers",
+  "debug": true,
+  "monitor_resolution": [
+    2560,
+    1600
+  ],
+  "order": [
+    "ART027",
+    "ART001",
+    "ART033",
+    "ART045"
+  ],
+  "seed": 1296481826,
+  "timestamp": "20260716-070652",
+  "version": "1.0.0"
+}
