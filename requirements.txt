@@ -1,0 +1,22 @@
+# CAPTURE spatial-memory experiment — Python dependencies
+# ---------------------------------------------------------------------------
+# The EXPERIMENT itself requires PsychoPy. The easiest route is the PsychoPy
+# Standalone application (https://www.psychopy.org/download.html), which
+# bundles a Python with numpy + Pillow already included — in that case you do
+# not need to pip-install anything.
+#
+# If you instead run in your own environment, install:
+
+psychopy>=2023.2.0     # experiment runtime (visual, event, gui, monitors, ...)
+
+# Preprocessing helpers:
+#   * extract_from_pptx.py  and  validate_stimuli.py  use ONLY the Python
+#     standard library (no packages required).
+#   * The IMAGE-BASED FALLBACK extractors (extract_floorplan_coords.py and
+#     extract_room_coords.py) need:
+
+numpy>=1.21            # only for the fallback red-detection scripts
+Pillow>=9.0            # only for the fallback red-detection scripts
+
+# Note: numpy and Pillow ship with PsychoPy, so a PsychoPy environment already
+# satisfies everything above.
